@@ -1,0 +1,40 @@
+    1  git config --global user.name "MarynaBrovkina" 
+    2  git config --global user.email "brovkina403@gmail.com" 
+    3  git clone https://github.com/Maryna03/HW_10.git
+    4  ls -1
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  git status
+    8  git add .
+    9  git status
+   10  [200~"Added "
+   11  git commit -m "Added .gitignore and ignored text_ignore.txt" 
+   12  git push
+   13  touch main_test.txt
+   14  “git add .”
+   15  git add .
+   16  git commit -m "Added main_test.txt"
+   17  git status
+   18  git push
+   19  git checkout -b develop
+   20  touch develop_test.txt
+   21  git add .
+   22  git commit -m "Created develop_test.txt"
+   23  echo "just a small change" >> develop_test.txt
+   24  git status
+   25  git add .
+   26  git commit -m "Modified develop_test.txt with a small change"
+   27  git status
+   28  git push
+   29  fatal: The current branch develop has no upstream branch.
+   30  To push the current branch and set the remote as upstream, use
+   31      git push --set-upstream origin develop
+   32  To have this happen automatically for branches without a tracking
+   33  upstream, see 'push.autoSetupRemote' in 'git help config'.
+   34  git push --set-upstream origin develop
+   35  git push --set-upstream origin develop
+   36  git checkout main
+   37  git merge develop
+   38  git log
+   39  q
+   40  history > command_list.csv
